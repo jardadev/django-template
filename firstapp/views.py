@@ -6,3 +6,7 @@ from django.http import HttpResponse
 def index(request):
     context = {'message': 'Hello, Django'}
     return render(request, 'firstapp/index.html', context)
+
+
+def home(request):
+    return HttpResponse("Welcome to home page!")
